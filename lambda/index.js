@@ -87,6 +87,7 @@ const LaunchRequestHandler = {
                 "contentDescription": null,
                 "smallSourceUrl": null,
                 "largeSourceUrl": null,
+                "scale":"best-fill",
                 "source":"https://www.megatv.com/wp-content/themes/whsk_megatv.com/common/imgs/mega_poster.jpg",
                 "backgroundColor":"#001254"
             },
@@ -96,9 +97,10 @@ const LaunchRequestHandler = {
                     "text": "Mega Channel"
                 }
             },
+            "header":true,
             "logoUrl": "http://mega.smart-tv-data.com/img/logo.png",
             "secondaryText": secondaryText,
-            "welcomeSpeechSSML": "<speak><amazon:emotion name='excited' intensity='medium'>Welcome to Mega Channel</amazon:emotion></speak>"
+            "welcomeSpeechSSML": "<speak><amazon:emotion name='excited' intensity='medium'>"+primaryText+"</amazon:emotion></speak>"
         },
         "transformers": [
             {
@@ -110,8 +112,9 @@ const LaunchRequestHandler = {
     }
 }
             })
-            .speak(responsetext)
-            .reprompt(responsetext)
+            //.speak(responsetext)
+            //.reprompt(responsetext)
+            .withShouldEndSession(false)
             .getResponse();
     }else{
         
