@@ -1,0 +1,74 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mega channel",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayStreamIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "AboutIntent",
+          "slots": [],
+          "samples": [
+            "erzähl mir davon",
+            "was mache ich",
+            "was ist das",
+            "über"
+          ]
+        },
+        {
+          "name": "PlayRadioIntent",
+          "slots": [],
+          "samples": [
+            "Platzhalter eins ",
+            "radio spielen",
+            "jetzt spielen Radio"
+          ]
+        },
+        {
+          "name": "PlayTvIntent",
+          "slots": [],
+          "samples": [
+            "Platzhalter zwei",
+            "tv",
+            "tv spielen",
+            "Fernsehen",
+            "Fernsehen spielen"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "13"
+}
